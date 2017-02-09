@@ -1,0 +1,4 @@
+This Clone was made as a Ruby on Rails Tutorial and styled with mostly bootstrap styling. There is special emphasis on Users, Reviews with Stars (raty.js), Uploading images, HAML and CRUD (create, read, update, destroy) ability. 
+All movie postings and reviews are made public.
+
+Go to www.crashlearner.com for more info/tutorials.

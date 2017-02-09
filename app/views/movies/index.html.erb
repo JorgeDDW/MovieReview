@@ -1,0 +1,17 @@
+<% if !user_signed_in? %>
+  <div class="jumbotron">
+    <h1>Fan Favorites</h1>
+    <p>Cardigan pork belly meh letterpress irony, bicycle rights hoodie iPhone four loko. Pickled pork belly chambray 90's tattooed. Austin Portland High Life raw denim Odd Future.</p>
+    <p><%= link_to "Sign Up to Write a Review", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+  </div>
+<% end %>
+
+<div class="row">
+  <% @movies.each do |movie| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <%= link_to (image_tag movie.image.url(:medium), class: 'image'), movie %>
+      </div>
+    </div> 
+  <% end %>
+</div>
